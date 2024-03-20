@@ -33,7 +33,7 @@ while True:
     if not is_collided and is_colliding:
         collisions += 1
         print("collisions: {}".format(collisions))
-    collided = colliding
+    is_collided = is_colliding
 
     cv2.imshow("video", frame)
     key = cv2.waitKey(int(fps)) & 0xFF
